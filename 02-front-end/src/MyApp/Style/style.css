@@ -1,0 +1,31 @@
+/* ===[ MAIN.JSX ]======================================= */
+body{
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.menu1{
+    display: flex;
+    justify-content: center;
+}
+
+.menuButton{
+    margin: 2px;
+    padding: 3px;
+    border: 1px solid black;
+    background-color: #ad92f7;
+}
+
+.menuButton:hover{
+    background-color: rgb(167, 205, 255);
+}
+
+
+/* ===[ TEMPLATE.JSX ]======================================= */
+.templateCont{
+    text-align: left;
+    border: 1px solid black;
+    margin: 4PX;
+    padding: 4px;
+    background-color: bisque;
+}

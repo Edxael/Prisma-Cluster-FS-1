@@ -1,6 +1,4 @@
 
-
-
 Notes: 
 
 https://github.com/graphcool/prisma
@@ -75,3 +73,28 @@ Your Prisma GraphQL database endpoint is live:
 
 
 This is the code that I Got:
+
+
+
+
+===========================================================
+MUTATION TO CREATE A USER
+
+mutation{
+  createUser(data: { name: "Koda Kumi" }){
+    id
+    name
+  }
+}
+
+===========================================================
+
+
+{
+  "data": {
+    "createUser": {
+      "id": "cjgg4hwd595kf0b25u0mpek00",
+      "name": "Koda Kumi"
+    }
+  }
+}
