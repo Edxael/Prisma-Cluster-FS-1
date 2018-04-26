@@ -23,6 +23,7 @@ export default class extends React.Component{
                 `}).then((result) => { return result.data.createUser } )
             
             await console.log("User Deleted: ", temp1 )
+            await this.setState({ singerId: '' })
         }
 
         return(

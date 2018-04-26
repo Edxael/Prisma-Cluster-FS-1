@@ -8,9 +8,7 @@ export default class extends React.Component{
 
     render(){
 
-        const addToDataBase = async () => {
-            console.log("add to database")
-
+        const updateDataBase = async () => {
             let temp1 = await client.mutate({
                 mutation: gql`
                 mutation{
@@ -25,6 +23,7 @@ export default class extends React.Component{
                 `}).then((result) => { return result.data.createUser } )
               
               await console.log("User Deleted: ", temp1 )
+              await this.setState({ singerName: '', singerId: '' })
         }
 
         return(
@@ -41,7 +40,7 @@ export default class extends React.Component{
                     <div>Provide New Name for this Singer:</div>
                     <input type="text" value={ this.state.singerName } onChange={ (e) => { this.setState({ singerName: e.target.value }) } } />
                     <br/><br/>
-                    <button onClick={ addToDataBase } >Update DataBase</button>
+                    <button onClick={ updateDataBase } >Update DataBase</button>
                 </div>
         </div>
         )

@@ -7,11 +7,10 @@ import Template from './99-Template'
 
 export default class extends React.Component{
     state = { singers: [] }
+
     render(){
 
         const loadSingers = async () => {
-            console.log("Loading Singers: ")
-
             let temp1 = await client.query({
                 query: gql`
                 query {

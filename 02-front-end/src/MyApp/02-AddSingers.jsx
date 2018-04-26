@@ -9,9 +9,6 @@ export default class extends React.Component{
     render(){
 
         const addToDataBase = async () => {
-            console.log("add to database")
-
-
             let temp1 = await client.mutate({
                 mutation: gql`
                 mutation{
@@ -23,25 +20,24 @@ export default class extends React.Component{
                 `}).then((result) => { return result.data.createUser } )
             
             await console.log("La Data: ", temp1 )
+            await this.setState({ singerName: '' })
+            // window.location.reload()
         }
 
         return(
             <div>
-                
+                <h1>Add Singer</h1>
 
-                    <h1>Add Singer</h1>
-
-                    <div>
-                        <h3>Provide Info Here</h3>
-                        <input type="text" value={ this.state.singerName } onChange={ (e) => { this.setState({ singerName: e.target.value }) } } />
-                        <br/><br/>
-                        <button onClick={ addToDataBase } >Add to DataBase</button>
-                    </div>
-
-                
+                <div>
+                    <h3>Provide Info Here</h3>
+                    <input type="text" value={ this.state.singerName } onChange={ (e) => { this.setState({ singerName: e.target.value }) } } />
+                    <br/><br/>
+                    <button onClick={ addToDataBase } >Add to DataBase</button>
+                </div>
             </div>
         )
     }
 }
+
 
 
