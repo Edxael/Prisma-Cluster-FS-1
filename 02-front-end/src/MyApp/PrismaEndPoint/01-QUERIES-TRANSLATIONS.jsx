@@ -82,3 +82,50 @@ let temp1 = await client.mutate({
 await console.log("User Deleted: ", temp1 )
 
 ==================================================
+
+
+
+
+
+
+
+===[ Update User ]================================
+
+updateUser(
+  data: UserUpdateInput!
+  where: UserWhereUniqueInput!
+  ): User
+  
+
+- - - - - - - - - - - - - - - - - - - - - - - - - 
+
+mutation{
+  
+  updateUser(
+      data: { name: "Leo Dan" }
+      where: { id: "cjgg94m9paj700b25x1vvs31u" }
+        ){
+          id
+          name
+        }
+    
+  }
+
+- - - - - - - - - - - - - - - - - - - - - - - - - 
+
+let temp1 = await client.mutate({
+  mutation: gql`
+  mutation{
+    updateUser(
+        data: { name: "Leo Dan" }
+        where: { id: "cjgg94m9paj700b25x1vvs31u" }
+          ){
+            id
+            name
+          }
+    }
+  `}).then((result) => { return result.data.createUser } )
+
+await console.log("User Deleted: ", temp1 )
+
+==================================================

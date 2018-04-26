@@ -30,7 +30,7 @@ export default class extends React.Component{
 
         return(
             <div>
-                <h1>Home Component</h1>
+                <h1>Read Singers from DataBase</h1>
                 <button onClick={ loadSingers } >Get Singers</button>
                 <br/><br/>
 
