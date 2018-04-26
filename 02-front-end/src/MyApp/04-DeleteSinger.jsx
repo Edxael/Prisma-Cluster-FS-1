@@ -24,6 +24,7 @@ export default class extends React.Component{
             
             await console.log("User Deleted: ", temp1 )
             await this.setState({ singerId: '' })
+            window.location.reload()
         }
 
         return(
@@ -33,9 +34,9 @@ export default class extends React.Component{
                 
                 <div>
                     <h3>ID of Singer to Delete</h3>
-                    <input type="text" value={ this.state.singerId } onChange={ (e) => { this.setState({ singerId: e.target.value }) } } />
+                    <input className="gralInput" type="text" value={ this.state.singerId } onChange={ (e) => { this.setState({ singerId: e.target.value }) } } />
                     <br/><br/>
-                    <button onClick={ deleteById } >Delete Singer from DataBase</button>
+                    <button className="gralButton" onClick={ deleteById } >Delete Singer from DataBase</button>
                 </div>
                 
             </div>

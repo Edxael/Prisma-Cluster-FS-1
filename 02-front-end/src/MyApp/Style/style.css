@@ -2,6 +2,15 @@
 body{
     background-color: aquamarine;
     text-align: center;
+    padding: 30px 100px;
+}
+
+.MainContainer{
+    background-color: rgba(254, 254, 254, 0.782);
+    border: 7px solid white;
+    padding: 15px 50px;
+    box-shadow: 5px 5px 5px #888888;
+    border-radius: 10px; 
 }
 
 .menu1{
@@ -11,13 +20,37 @@ body{
 
 .menuButton{
     margin: 2px;
-    padding: 3px;
+    padding: 3px 6px;
     border: 1px solid black;
-    background-color: #ad92f7;
+    box-shadow: 5px 5px 5px #888888;
+    border-radius: 10px; 
+    background-color: rgba(173, 146, 247, 0.775);
 }
 
 .menuButton:hover{
-    background-color: rgb(236, 255, 167);
+    background-color: rgba(170, 252, 180, 0.823);
+}
+
+.gralButton{
+  background-color: rgba(2, 154, 255, 0.796); 
+  box-shadow: 5px 5px 5px #888888;
+  border-radius: 10px; 
+  width: 250px;
+  height: 30px;
+}
+
+.gralButton:hover{
+    background-color: rgba(170, 252, 180, 0.823); 
+  }
+
+.gralInput{
+    padding: 0px 5px;
+    background-color: rgba(255, 235, 205, 0.796);
+    height: 35px;
+    width: 70%;
+    font-size: 30px;
+    box-shadow: 5px 5px 5px #888888;
+    border-radius: 5px; 
 }
 
 
@@ -25,7 +58,9 @@ body{
 .templateCont{
     text-align: left;
     border: 1px solid black;
-    margin: 4PX;
-    padding: 4px;
-    background-color: bisque;
+    margin: 8PX;
+    padding: 4px 15px;
+    background-color: rgba(170, 252, 180, 0.823);
+    box-shadow: 5px 5px 5px #888888;
+    border-radius: 10px;
 }

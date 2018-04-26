@@ -21,7 +21,7 @@ export default class extends React.Component{
             
             await console.log("La Data: ", temp1 )
             await this.setState({ singerName: '' })
-            // window.location.reload()
+            window.location.reload()
         }
 
         return(
@@ -29,10 +29,10 @@ export default class extends React.Component{
                 <h1>Add Singer</h1>
 
                 <div>
-                    <h3>Provide Info Here</h3>
-                    <input type="text" value={ this.state.singerName } onChange={ (e) => { this.setState({ singerName: e.target.value }) } } />
+                    <h3>Provide Singer or Group name below</h3>
+                    <input className="gralInput" type="text" value={ this.state.singerName } onChange={ (e) => { this.setState({ singerName: e.target.value }) } } />
                     <br/><br/>
-                    <button onClick={ addToDataBase } >Add to DataBase</button>
+                    <button className="gralButton" onClick={ addToDataBase } >Add to DataBase</button>
                 </div>
             </div>
         )

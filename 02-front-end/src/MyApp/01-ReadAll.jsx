@@ -30,7 +30,7 @@ export default class extends React.Component{
         return(
             <div>
                 <h1>Read Singers from DataBase</h1>
-                <button onClick={ loadSingers } >Get Singers</button>
+                <button className="gralButton" onClick={ loadSingers } >Get All Singers</button>
                 <br/><br/>
 
                 { this.state.singers[0] ? this.state.singers.map((x) => { return <Template key={x.id} data={x} /> }) : <div>Click to get singers</div> }

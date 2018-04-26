@@ -16,10 +16,10 @@ export default class extends React.Component{
         return(
             <ApolloProvider client={client}>
                 <Router>
-                    <div>
+                    <div className="MainContainer">
                 
                         <div className="menu1">
-                            <Link className="menuButton" to="/">Home Page</Link>
+                            <Link className="menuButton" to="/">All Singers</Link>
                             <Link className="menuButton" to="/2">Add-Singer</Link>
                             <Link className="menuButton" to="/3">Update-Singer</Link>
                             <Link className="menuButton" to="/4">Delete-Singer</Link>
