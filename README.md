@@ -7,7 +7,7 @@
 - Apollo
 
 
-Live App: http://basicprisma.mycode.website/4
+Live App: http://basicprisma.mycode.website/
 
 Blog Post: http://blog.mycode.website/prisma-react-graphql-bare-bones/
 
