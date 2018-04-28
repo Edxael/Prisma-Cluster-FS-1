@@ -16,5 +16,4 @@ Blog Post: http://blog.mycode.website/prisma-react-graphql-bare-bones/
 </p>
 <hr />
 
---------------------------------------------
 By: Edmundo Rubio.
