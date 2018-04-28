@@ -6,10 +6,12 @@
 - GraphQL 
 - Apollo
 
-
 Live App: http://basicprisma.mycode.website/
 
 Blog Post: http://blog.mycode.website/prisma-react-graphql-bare-bones/
+
+
+![Screen Shoot](/02-front-end/src/MyApp/img/ss1.gif)
 
 
 --------------------------------------------
